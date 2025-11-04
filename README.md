@@ -98,6 +98,24 @@ Performance was evaluated using accuracy and a classification report:
    ```bash
    git clone https://github.com/ovaisa-01/heart-disease-project.git
    cd heart-disease-project
+   
+2. **Create a Virtual Environment**
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate   # For Windows
+
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+
+4. **Run the Script**
+   ```bash
+   python heart_disease.py
+
+
+### The program will display the model’s accuracy and classification report in the terminal.
 
    ---
 
