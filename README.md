@@ -83,7 +83,7 @@ Future improvements may include ensemble methods, hyperparameter tuning, and neu
 8. Author
 
 Ovaisa KT
-Beginner AI/ML Learner | Aspiring MBZUAI Applicant
+Beginner AI/ML Learner
 📧 Email: ovaisabloom@gmail.com
 
 🌐 GitHub: @ovaisa-01
