@@ -117,9 +117,27 @@ Performance was evaluated using accuracy and a classification report:
 
 ### The program will display the model’s accuracy and classification report in the terminal.
 
-   ---
+---
+   
+## 7. Results and Discussion
 
-## 7. Conclusion
+The Logistic Regression model achieved an accuracy of approximately 79.5%, demonstrating promising predictive performance for a simple classification model.
+Further experiments with Random Forest or Support Vector Machines (SVM) could potentially enhance accuracy and robustness.
+
+The results validate the dataset’s potential for machine learning–based predictive modeling in healthcare analytics.
+
+---
+
+## 8. Future Work
+
+ - Explore additional classification algorithms (SVM, Random Forest, Gradient Boosting).
+ - Apply cross-validation for improved generalization.
+ - Deploy the model using Streamlit or Flask for web-based prediction.
+ - Conduct feature importance analysis to interpret model behavior.
+
+---
+
+## 9. Conclusion
 
 This project successfully demonstrates the use of **machine learning** in healthcare prediction tasks using accessible tools.  
 Through systematic **data preprocessing**, **model training**, and **performance evaluation**, it establishes a reproducible baseline for future exploration in **predictive health analytics**.
