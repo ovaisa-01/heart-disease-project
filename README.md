@@ -1,89 +1,100 @@
-🫀 Heart Disease Prediction Using Machine Learning
-Abstract
+# ❤️ Heart Disease Prediction Project  
 
-This project investigates the use of machine learning algorithms to predict the presence of heart disease in patients based on key clinical parameters.
-Using the Kaggle Heart Disease dataset, the project applies Logistic Regression for binary classification, achieving an accuracy of approximately 79.5%.
-The aim is to explore how simple models can assist in early medical diagnosis and decision support systems.
+### A Machine Learning Approach Using the UCI Heart Disease Dataset  
 
-1. Introduction
+---
 
-Heart disease remains one of the leading causes of death globally.
-Early detection through data-driven methods can significantly improve patient outcomes.
-This project represents a beginner-level implementation of predictive modeling for healthcare analytics.
+## 1. Introduction  
 
-2. Methodology
+Cardiovascular diseases remain one of the leading causes of death worldwide. Early detection of heart disease can significantly improve patient outcomes through timely intervention.  
+This project applies **machine learning techniques** to predict the presence of heart disease based on clinical and physiological patient data.  
 
-The following workflow was applied:
+The dataset used in this study is the **Heart Disease Dataset from Kaggle (UCI Source)**, containing attributes related to age, blood pressure, cholesterol, and other vital indicators.  
 
-Data Preprocessing:
+---
 
-Cleaning data, normalizing features, and splitting into training/testing sets.
+## 2. Objectives  
 
-Feature Selection:
+The objectives of this project are to:  
+1. Preprocess and explore the heart disease dataset to identify patterns and relationships between variables.  
+2. Apply a **Logistic Regression model** for binary classification (disease vs. no disease).  
+3. Evaluate model performance using accuracy, precision, recall, and f1-score metrics.  
+4. Build foundational understanding of the **machine learning pipeline** using Python and Scikit-learn.
 
-Variables include age, sex, cholesterol, chest pain type, blood pressure, and ECG results.
+---
 
-Model Training:
+## 3. Dataset Description  
 
-Logistic Regression classifier using scikit-learn.
+- **Source:** [Kaggle – Heart Disease UCI Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)  
+- **Number of Samples:** 1,025  
+- **Target Variable:** `target`  
+  - 1 → Presence of heart disease  
+  - 0 → Absence of heart disease  
+- **Missing Values:** None detected  
 
-Evaluation Metrics:
+### Key Features  
 
-Accuracy, precision, recall, and F1-score.
+| Feature | Description |
+|----------|-------------|
+| age | Age of the patient |
+| sex | Gender (1 = male, 0 = female) |
+| cp | Chest pain type |
+| trestbps | Resting blood pressure (mm Hg) |
+| chol | Serum cholesterol (mg/dl) |
+| fbs | Fasting blood sugar > 120 mg/dl |
+| restecg | Resting electrocardiographic results |
+| thalach | Maximum heart rate achieved |
+| exang | Exercise-induced angina |
+| oldpeak | ST depression induced by exercise |
+| slope | Slope of the peak exercise ST segment |
+| ca | Number of major vessels (0–3) colored by fluoroscopy |
+| thal | Thalassemia |
+| target | Presence (1) or absence (0) of heart disease |
 
-3. Results
+---
 
-The trained model achieved the following performance:
+## 4. Methodology  
 
-Accuracy: 79.51%
-Precision, Recall, and F1-score show balanced performance across both classes.
+### Step 1: Data Preprocessing  
+- Imported the dataset using `pandas`.  
+- Checked for missing values (none found).  
+- Normalized numerical features and encoded categorical data.  
+- Split data into **80% training** and **20% testing** sets.
 
+### Step 2: Model Development  
+- Applied **Logistic Regression** for binary classification.  
+- Utilized Scikit-learn’s `train_test_split`, `LogisticRegression`, and `metrics` libraries.  
 
-These results demonstrate that even a simple logistic regression model can provide useful baseline predictions for clinical data.
+### Step 3: Model Evaluation  
+Performance was evaluated using accuracy and a classification report:
 
-4. Tools and Libraries
+| Metric | Score |
+|---------|-------|
+| **Accuracy** | 79.5% |
+| **Precision (No Disease)** | 0.85 |
+| **Precision (Disease)** | 0.76 |
+| **Recall (No Disease)** | 0.72 |
+| **Recall (Disease)** | 0.87 |
 
-Programming Language: Python
+---
 
-Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
+## 5. Tools and Libraries  
 
-Install all dependencies using:
+| Tool | Purpose |
+|------|----------|
+| **Python** | Programming language |
+| **Pandas** | Data loading and manipulation |
+| **NumPy** | Numerical computation |
+| **Scikit-learn** | Machine learning modeling |
+| **Matplotlib & Seaborn** | Data visualization |
 
-pip install -r requirements.txt
+---
 
-5. How to Run
+## 6. Implementation  
 
-Clone this repository:
+### Running the Project  
 
-git clone https://github.com/ovaisa-01/heart-disease-project.git
-cd heart-disease-project
-
-
-Run the script:
-
-python heart_disease.py
-
-6. Dataset
-
-This project uses the Heart Disease Dataset (Kaggle)
-,
-containing patient data such as:
-
-Age, sex, cholesterol, blood pressure
-
-ECG and exercise-related data
-
-Binary target variable: 0 (no disease) and 1 (disease present)
-
-7. Conclusion
-
-This study demonstrates how basic machine learning techniques can assist in medical prediction tasks.
-Future improvements may include ensemble methods, hyperparameter tuning, and neural network architectures to enhance model accuracy and generalization.
-
-8. Author
-
-Ovaisa KT
-Beginner AI/ML Learner
-📧 Email: ovaisabloom@gmail.com
-
-🌐 GitHub: @ovaisa-01
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/ovaisa-01/heart-disease-project.git
+   cd heart-disease-project
