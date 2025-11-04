@@ -98,3 +98,13 @@ Performance was evaluated using accuracy and a classification report:
    ```bash
    git clone https://github.com/ovaisa-01/heart-disease-project.git
    cd heart-disease-project
+
+   ---
+
+## 7. Conclusion
+
+This project successfully demonstrates the use of **machine learning** in healthcare prediction tasks using accessible tools.  
+Through systematic **data preprocessing**, **model training**, and **performance evaluation**, it establishes a reproducible baseline for future exploration in **predictive health analytics**.
+
+---
+
